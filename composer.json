@@ -1,7 +1,7 @@
 {
     "name": "denpa/php-altcoinrpc",
     "type": "library",
-    "description": "Fully unit-tested altcoin JSON-RPC client",
+    "description": "Fully unit-tested Altcoin JSON-RPC client",
     "keywords": ["altcoin","api","jsonrpc","guzzle"],
     "homepage": "https://github.com/denpamusic/php-altcoinrpc",
     "license": "MIT",
