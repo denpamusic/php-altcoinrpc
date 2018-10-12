@@ -9,7 +9,7 @@ use Denpa\Bitcoin\Exceptions\Handler as ExceptionHandler;
  */
 $exceptionHandler = exceptionHandler::getInstance();
 
-/**
+/*
  * Set namespace for exceptions.
  *
  * This will make sure, that all exceptions
@@ -21,7 +21,7 @@ $exceptionHandler = exceptionHandler::getInstance();
  */
 $exceptionHandler->setNamespace('Altcoin\\Exceptions');
 
-/**
+/*
  * Register exception handler function.
  *
  * If you need to do something more complicated than
@@ -33,7 +33,7 @@ $exceptionHandler->registerHandler(function ($exception) {
     //
 });
 
-/**
+/*
  * Return exception handler.
  * Useful when performing unit tests.
  */
