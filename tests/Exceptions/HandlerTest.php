@@ -2,10 +2,10 @@
 
 namespace Altcoin\Tests\Exceptions;
 
-use PHPUnit\Framework\TestCase;
 use Altcoin\Exceptions\BadConfigurationException;
 use Denpa\Bitcoin\Exceptions as BitcoinExceptions;
 use Denpa\Bitcoin\Exceptions\Handler as ExceptionHandler;
+use PHPUnit\Framework\TestCase;
 
 class HandlerTest extends TestCase
 {

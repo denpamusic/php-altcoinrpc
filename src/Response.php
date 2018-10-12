@@ -2,10 +2,10 @@
 
 namespace Altcoin;
 
+use Denpa\Bitcoin\Responses\Response as BitcoinResponse;
 use Denpa\Bitcoin\Traits\Collection;
 use Denpa\Bitcoin\Traits\ReadOnlyArray;
 use Denpa\Bitcoin\Traits\SerializableContainer;
-use Denpa\Bitcoin\Responses\Response as BitcoinResponse;
 
 /**
  * Altcoin response handler class.
