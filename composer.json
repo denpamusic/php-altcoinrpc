@@ -1,0 +1,34 @@
+{
+    "name": "denpa/php-altcoinrpc",
+    "type": "library",
+    "description": "Fully unit-tested altcoin JSON-RPC client",
+    "keywords": ["altcoin","api","jsonrpc","guzzle"],
+    "homepage": "https://github.com/denpamusic/php-altcoinrpc",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Denis Paavilainen",
+            "email": "denpa@netfleet.space",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "denpa/php-bitcoinrpc": "dev-master"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.7 || ^6.4 || ^7.0"
+    },
+    "autoload": {
+        "psr-4" : {
+            "Altcoin\\": "src"
+        },
+        "files" : [
+            "src/Exceptions/handler.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4" : {
+            "Altcoin\\Tests\\": "tests"
+        }
+    }
+}
