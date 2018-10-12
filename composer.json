@@ -13,6 +13,7 @@
         }
     ],
     "require": {
+        "php": ">=5.6.0",
         "denpa/php-bitcoinrpc": "dev-master"
     },
     "require-dev": {
