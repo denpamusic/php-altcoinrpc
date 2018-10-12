@@ -7,7 +7,7 @@ use Denpa\Bitcoin\Exceptions\Handler as ExceptionHandler;
 /**
  * Get exception handler.
  */
-$exceptionHandler = exceptionHandler::getInstance();
+$exceptionHandler = ExceptionHandler::getInstance();
 
 /*
  * Set namespace for exceptions.
