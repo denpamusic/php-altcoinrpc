@@ -35,7 +35,7 @@ class Client extends Bitcoin\Client
     /**
      * Gets response handler class name.
      *
-     * Should return full class path
+     * This function should return full class path
      * including namespace.
      *
      * @return string

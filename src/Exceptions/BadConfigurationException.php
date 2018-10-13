@@ -5,10 +5,10 @@ namespace Altcoin\Exceptions;
 use Denpa\Bitcoin\Exceptions;
 
 /**
- * BadConfigurationException is trown when encountering
+ * BadConfigurationException is thrown when encountering
  * a bad configuration value.
  *
- * This is exception stub, that you can
+ * This is an exception stub, that you can
  * customize to your liking or leave as is.
  */
 class BadConfigurationException extends Exceptions\BadConfigurationException

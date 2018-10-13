@@ -12,6 +12,7 @@ use Denpa\Bitcoin\Traits\SerializableContainer;
  *
  * Instance of this class is returned as result
  * of successfull remote call.
+ *
  * By default, this class uses all available response
  * traits, however you can customize it to your needs.
  *

@@ -5,7 +5,7 @@ namespace Altcoin\Exceptions;
 use Denpa\Bitcoin\Exceptions\Handler as ExceptionHandler;
 
 /**
- * Get exception handler.
+ * Get exception handler instance.
  */
 $exceptionHandler = ExceptionHandler::getInstance();
 
@@ -24,10 +24,13 @@ $exceptionHandler->setNamespace('Altcoin\\Exceptions');
 /*
  * Register exception handler function.
  *
- * If you need to do something more complicated than
- * changing namespace, you can do it in
- * the handler function below.
- * Each thrown exception passes through this handler function.
+ * If your project requeres anything more complicated than
+ * changing namespace, you can do using
+ * handler function below.
+ *
+ * When exception is thrown, it'll be passed through
+ * this handler function, which allows you to
+ * modify exception or throw different one.
  */
 $exceptionHandler->registerHandler(function ($exception) {
     //
