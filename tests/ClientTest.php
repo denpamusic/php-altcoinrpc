@@ -40,14 +40,11 @@ class ClientTest extends TestCase
         $this->assertEquals($auth[0], $defaults['user']);
         $this->assertEquals($auth[1], $defaults['password']);
     }
-
-    public function testExceptionHandler()
-    {
-        $exceptionHandler = include './src/Exceptions/handler.php';
-        $this->assertInstanceOf(\Denpa\Bitcoin\Exceptions\Handler::class, $exceptionHandler);
-    }
 }
 
+/*
+ * Mock client class to test protected methods.
+ */
 class FakeClient extends Client
 {
     public function getResponseHandler()
