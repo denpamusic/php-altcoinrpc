@@ -20,6 +20,11 @@ class HandlerTest extends TestCase
         $this->assertInstanceOf(ExceptionHandler::class, $exceptionHandler);
     }
 
+    /**
+     * Test exception handler namespace setter.
+     *
+     * @return void
+     */
     public function testSetNamespace()
     {
         $exception = new BitcoinExceptions\BadConfigurationException(['foo' => 'bar']);
