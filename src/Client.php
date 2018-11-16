@@ -23,12 +23,13 @@ class Client extends Bitcoin\Client
     protected function getDefaultConfig()
     {
         return [
-            'scheme'   => 'http',
-            'host'     => '127.0.0.1',
-            'port'     => 8332,
-            'user'     => '',
-            'password' => '',
-            'ca'       => null,
+            'scheme'        => 'http',
+            'host'          => '127.0.0.1',
+            'port'          => 8332,
+            'user'          => '',
+            'password'      => '',
+            'preserve_case' => '',
+            'ca'            => null,
         ];
     }
 
