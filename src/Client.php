@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Altcoin;
 
 use Denpa\Bitcoin;
@@ -20,7 +22,7 @@ class Client extends Bitcoin\Client
      *
      * @return array
      */
-    protected function getDefaultConfig()
+    protected function getDefaultConfig() : array
     {
         return [
             'scheme'        => 'http',
@@ -41,7 +43,7 @@ class Client extends Bitcoin\Client
      *
      * @return string
      */
-    protected function getResponseHandler()
+    protected function getResponseHandler() : string
     {
         return 'Altcoin\\Response';
     }

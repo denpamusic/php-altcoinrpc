@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Altcoin\Exceptions;
 
 use Denpa\Bitcoin\Exceptions\Handler as ExceptionHandler;

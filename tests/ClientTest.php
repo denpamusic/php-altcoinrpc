@@ -47,13 +47,13 @@ class ClientTest extends TestCase
  */
 class FakeClient extends Client
 {
-    public function getResponseHandler()
-    {
-        return parent::getResponseHandler();
-    }
-
-    public function getDefaultConfig()
+    public function getDefaultConfig() : array
     {
         return parent::getDefaultConfig();
+    }
+    
+    public function getResponseHandler() : string
+    {
+        return parent::getResponseHandler();
     }
 }
