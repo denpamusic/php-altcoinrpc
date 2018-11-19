@@ -51,7 +51,7 @@ class FakeClient extends Client
     {
         return parent::getDefaultConfig();
     }
-    
+
     public function getResponseHandler() : string
     {
         return parent::getResponseHandler();
