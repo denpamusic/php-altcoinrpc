@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Altcoin\Exceptions;
 
 use Denpa\Bitcoin\Exceptions\Handler as ExceptionHandler;
+use Throwable;
 
 /**
  * Get exception handler instance.
@@ -34,7 +35,7 @@ $exceptionHandler->setNamespace('Altcoin\\Exceptions');
  * this handler function, which allows you to
  * modify exception or throw different one.
  */
-$exceptionHandler->registerHandler(function ($exception) {
+$exceptionHandler->registerHandler(function (Throwable $exception) {
     //
 });
 

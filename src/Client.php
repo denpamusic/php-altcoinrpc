@@ -28,10 +28,10 @@ class Client extends Bitcoin\Client
             'scheme'        => 'http',
             'host'          => '127.0.0.1',
             'port'          => 8332,
-            'user'          => '',
-            'password'      => '',
-            'preserve_case' => '',
+            'user'          => null,
+            'password'      => null,
             'ca'            => null,
+            'preserve_case' => false,
         ];
     }
 

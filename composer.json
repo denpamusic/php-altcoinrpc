@@ -14,7 +14,7 @@
     ],
     "require": {
         "php": ">=7.1",
-        "denpa/php-bitcoinrpc": "2.1.x-dev"
+        "denpa/php-bitcoinrpc": "^2.1"
     },
     "require-dev": {
         "phpunit/phpunit": "^7.0"
