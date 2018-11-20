@@ -27,18 +27,15 @@ class ClientTest extends TestCase
      */
     public function testDefaultConfig()
     {
-        $client = new FakeClient();
-        $config = $client->getConfig();
-        $defaults = $client->getDefaultConfig();
+        $fake = new FakeClient();
+        $defaults = $fake->getDefaultConfig();
 
-        $uri = $client->getConfig('base_uri');
-        $this->assertEquals($uri->getScheme(), $defaults['scheme']);
-        $this->assertEquals($uri->getHost(), $defaults['host']);
-        $this->assertEquals($uri->getPort(), $defaults['port']);
-
-        $auth = $client->getConfig('auth');
-        $this->assertEquals($auth[0], $defaults['user']);
-        $this->assertEquals($auth[1], $defaults['password']);
+        $this->assertEquals($fake->getConfig('scheme'), $defaults['scheme']);
+        $this->assertEquals($fake->getConfig('host'), $defaults['host']);
+        $this->assertEquals($fake->getConfig('port'), $defaults['port']);
+        $this->assertEquals($fake->getConfig('user'), $defaults['user']);
+        $this->assertEquals($fake->getConfig('password'), $defaults['password']);
+        $this->assertEquals($fake->getConfig('preserve_case'), $defaults['preserve_case']);
     }
 }
 
